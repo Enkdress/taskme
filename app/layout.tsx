@@ -18,6 +18,11 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+        <head>
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="/icon.png"></link>
+          <meta name="theme-color" content="#fff" />
+        </head>
         <body className={twMerge('bg-[#f9f9fb]', poppins.className)}>{children}</body>
       </html>
     </ClerkProvider>
